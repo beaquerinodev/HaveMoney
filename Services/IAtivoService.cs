@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using HaveMoney.Models;
 
 namespace HaveMoney.Services
 {
     public interface IAtivoService
     {
-        List<Ativo> ObterTodosAtivos();  // Adicione esta linha
-        List<Ativo> ObterAtivosComTendencia();
+        Task<List<Ativo>> ObterTodosAtivos();
+        Task<List<Ativo>> ObterAtivosComTendenciaClara();
     }
 }

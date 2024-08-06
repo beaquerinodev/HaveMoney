@@ -1,12 +1,9 @@
-﻿using System;
-
-namespace HaveMoney.Models
+﻿namespace HaveMoney.Models
 {
     public class Sinal
     {
-        public Ativo Ativo { get; set; }
-        public string TipoSinal { get; set; } // "Compra" ou "Venda"
-        public DateTime DataHoraSinal { get; set; }
-        public TimeSpan PrazoOperacao { get; set; }
+        public string AtivoCodigo { get; set; } // Altere para o nome correto se necessário
+        public string TipoSinal { get; set; }
+        public int PrazoOperacao { get; set; } // Adicione esta linha se precisar de um prazo de operação
     }
 }

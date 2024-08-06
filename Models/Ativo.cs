@@ -1,11 +1,9 @@
-﻿using System;
-
-namespace HaveMoney.Models
+﻿namespace HaveMoney.Models
 {
     public class Ativo
     {
+        public string Codigo { get; set; }
         public string Nome { get; set; }
-        public double PrecoAtual { get; set; }
-        public double Tendencia { get; set; } // Valor indicando a tendência do ativo
+        public string Tendencia { get; set; } // Adicione esta linha se precisar de uma propriedade de tendência
     }
 }
